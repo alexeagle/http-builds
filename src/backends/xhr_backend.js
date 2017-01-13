@@ -24,6 +24,7 @@ const /** @type {?} */ XSSI_PREFIX = /^\)\]\}',?\n/;
  * This class would typically not be created or interacted with directly inside applications, though
  * the {\@link MockConnection} may be interacted with in tests.
  *
+ * \@experimental
  */
 export class XHRConnection {
     /**
@@ -182,6 +183,7 @@ function XHRConnection_tsickle_Closure_declarations() {
  * with different `cookieName` and `headerName` values. See the main HTTP documentation for more
  * details.
  *
+ * \@experimental
  */
 export class CookieXSRFStrategy {
     /**
@@ -220,6 +222,7 @@ function CookieXSRFStrategy_tsickle_Closure_declarations() {
  *
  * ```
  * import {Http, MyNodeBackend, HTTP_PROVIDERS, BaseRequestOptions} from '\@angular/http';
+ * \@Component({
  *   viewProviders: [
  *     HTTP_PROVIDERS,
  *     {provide: Http, useFactory: (backend, options) => {
@@ -232,6 +235,7 @@ function CookieXSRFStrategy_tsickle_Closure_declarations() {
  *   }
  * }
  * ```
+ * \@experimental
  */
 export class XHRBackend {
     /**

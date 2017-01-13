@@ -1,5 +1,5 @@
 /**
- * @license undefined
+ * @license
  * Copyright Google Inc. All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
@@ -22,6 +22,7 @@ function paramParser(rawParams = '') {
     return map;
 }
 /**
+ * \@experimental
  *
  */
 export class QueryEncoder {
@@ -85,6 +86,7 @@ function standardEncoding(v) {
  *
  * let params = new URLSearchParams('', new MyQueryEncoder());
  * ```
+ * \@experimental
  */
 export class URLSearchParams {
     /**

@@ -17,6 +17,7 @@ const /** @type {?} */ JSONP_ERR_WRONG_METHOD = 'JSONP requests must use GET req
 /**
  * Abstract base class for an in-flight JSONP request.
  *
+ * \@experimental
  * @abstract
  */
 export class JSONPConnection {
@@ -148,6 +149,7 @@ function JSONPConnection__tsickle_Closure_declarations() {
 /**
  * A {\@link ConnectionBackend} that uses the JSONP strategy of making requests.
  *
+ * \@experimental
  * @abstract
  */
 export class JSONPBackend extends ConnectionBackend {

@@ -24,6 +24,7 @@ import { Body } from './body';
  * can be accessed many times. There are other differences in the implementation, but this is the
  * most significant.
  *
+ * \@experimental
  */
 export class Response extends Body {
     /**
@@ -48,7 +49,7 @@ export class Response extends Body {
 }
 function Response_tsickle_Closure_declarations() {
     /**
-     * One of "basic", "cors", "default", "error, or "opaque".
+     * One of "basic", "cors", "default", "error", or "opaque".
      *
      * Defaults to "default".
      * @type {?}

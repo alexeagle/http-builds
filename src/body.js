@@ -70,7 +70,10 @@ export class Body {
     }
 }
 function Body_tsickle_Closure_declarations() {
-    /** @type {?} */
+    /**
+     * \@internal
+     * @type {?}
+     */
     Body.prototype._body;
 }
 //# sourceMappingURL=body.js.map

@@ -11,6 +11,7 @@ import { Injectable } from '@angular/core/index';
  *
  * Take care not to evaluate this in non-browser contexts.
  *
+ * \@experimental
  */
 export class BrowserXhr {
     constructor() {

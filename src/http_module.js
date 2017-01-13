@@ -39,6 +39,7 @@ export function jsonpFactory(jsonpBackend, requestOptions) {
 /**
  * The module that includes http's providers
  *
+ * \@experimental
  */
 export class HttpModule {
 }
@@ -70,6 +71,7 @@ function HttpModule_tsickle_Closure_declarations() {
 /**
  * The module that includes jsonp's providers
  *
+ * \@experimental
  */
 export class JsonpModule {
 }

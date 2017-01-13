@@ -27,6 +27,7 @@ import { URLSearchParams } from './url_search_params';
  * import {Injectable, Injector} from '\@angular/core';
  * import {HTTP_PROVIDERS, Http, Request, RequestMethod} from '\@angular/http';
  *
+ * \@Injectable()
  * class AutoAuthenticator {
  *   constructor(public http:Http) {}
  *   request(url:string) {
@@ -46,6 +47,7 @@ import { URLSearchParams } from './url_search_params';
  * });
  * ```
  *
+ * \@experimental
  */
 export class Request extends Body {
     /**

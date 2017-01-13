@@ -14,6 +14,7 @@
      *
      * Take care not to evaluate this in non-browser contexts.
      *
+     * \@experimental
      */
     var BrowserXhr = (function () {
         function BrowserXhr() {
@@ -120,6 +121,7 @@
      * console.log(thirdHeaders.get('X-My-Custom-Header')); //'Angular'
      * ```
      *
+     * \@experimental
      */
     var Headers = (function () {
         /**
@@ -318,6 +320,7 @@
      * console.log('res.json():', res.json()); // Object {name: "Jeff"}
      * ```
      *
+     * \@experimental
      */
     var ResponseOptions = (function () {
         /**
@@ -415,6 +418,7 @@
      * console.log('res.text():', res.text()); // Angular;
      * ```
      *
+     * \@experimental
      */
     var BaseResponseOptions = (function (_super) {
         __extends$1(BaseResponseOptions, _super);
@@ -442,6 +446,7 @@
      * The primary purpose of a `ConnectionBackend` is to create new connections to fulfill a given
      * {\@link Request}.
      *
+     * \@experimental
      * @abstract
      */
     var ConnectionBackend = (function () {
@@ -458,6 +463,7 @@
     /**
      * Abstract class from which real connections are derived.
      *
+     * \@experimental
      * @abstract
      */
     var Connection = (function () {
@@ -468,6 +474,7 @@
     /**
      * An XSRFStrategy configures XSRF protection (e.g. via headers) on an HTTP request.
      *
+     * \@experimental
      * @abstract
      */
     var XSRFStrategy = (function () {
@@ -534,7 +541,7 @@
     }
 
     /**
-     * @license undefined
+     * @license
      * Copyright Google Inc. All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
@@ -558,6 +565,7 @@
         return map;
     }
     /**
+     * \@experimental
      *
      */
     var QueryEncoder = (function () {
@@ -624,6 +632,7 @@
      *
      * let params = new URLSearchParams('', new MyQueryEncoder());
      * ```
+     * \@experimental
      */
     var URLSearchParams = (function () {
         /**
@@ -847,6 +856,7 @@
      * can be accessed many times. There are other differences in the implementation, but this is the
      * most significant.
      *
+     * \@experimental
      */
     var Response = (function (_super) {
         __extends$2(Response, _super);
@@ -962,6 +972,7 @@
     /**
      * Abstract base class for an in-flight JSONP request.
      *
+     * \@experimental
      * @abstract
      */
     var JSONPConnection = (function () {
@@ -1068,6 +1079,7 @@
     /**
      * A {\@link ConnectionBackend} that uses the JSONP strategy of making requests.
      *
+     * \@experimental
      * @abstract
      */
     var JSONPBackend = (function (_super) {
@@ -1115,6 +1127,7 @@
      * This class would typically not be created or interacted with directly inside applications, though
      * the {\@link MockConnection} may be interacted with in tests.
      *
+     * \@experimental
      */
     var XHRConnection = (function () {
         /**
@@ -1263,6 +1276,7 @@
      * with different `cookieName` and `headerName` values. See the main HTTP documentation for more
      * details.
      *
+     * \@experimental
      */
     var CookieXSRFStrategy = (function () {
         /**
@@ -1298,6 +1312,7 @@
      *
      * ```
      * import {Http, MyNodeBackend, HTTP_PROVIDERS, BaseRequestOptions} from '\@angular/http';
+     * \@Component({
      *   viewProviders: [
      *     HTTP_PROVIDERS,
      *     {provide: Http, useFactory: (backend, options) => {
@@ -1310,6 +1325,7 @@
      *   }
      * }
      * ```
+     * \@experimental
      */
     var XHRBackend = (function () {
         /**
@@ -1378,6 +1394,7 @@
      * console.log('options.url:', options.url); // https://google.com
      * ```
      *
+     * \@experimental
      */
     var RequestOptions = (function () {
         /**
@@ -1540,6 +1557,7 @@
      * console.log('req.url:', req.url); // https://google.com
      * ```
      *
+     * \@experimental
      */
     var BaseRequestOptions = (function (_super) {
         __extends$3(BaseRequestOptions, _super);
@@ -1583,6 +1601,7 @@
      * import {Injectable, Injector} from '\@angular/core';
      * import {HTTP_PROVIDERS, Http, Request, RequestMethod} from '\@angular/http';
      *
+     * \@Injectable()
      * class AutoAuthenticator {
      *   constructor(public http:Http) {}
      *   request(url:string) {
@@ -1602,6 +1621,7 @@
      * });
      * ```
      *
+     * \@experimental
      */
     var Request = (function (_super) {
         __extends$5(Request, _super);
@@ -1767,6 +1787,7 @@
      * ```typescript
      * import {Http, HTTP_PROVIDERS} from '\@angular/http';
      * import 'rxjs/add/operator/map'
+     * \@Component({
      *   selector: 'http-app',
      *   viewProviders: [HTTP_PROVIDERS],
      *   templateUrl: 'people.html'
@@ -1812,6 +1833,7 @@
      * http.get('request-from-mock-backend.json').subscribe((res:Response) => doSomething(res));
      * ```
      *
+     * \@experimental
      */
     var Http = (function () {
         /**
@@ -1920,6 +1942,9 @@
         ]; };
         return Http;
     }());
+    /**
+     * \@experimental
+     */
     var Jsonp = (function (_super) {
         __extends$4(Jsonp, _super);
         /**
@@ -1935,6 +1960,7 @@
          * object can be provided as the 2nd argument. The options object will be merged with the values
          * of {\@link BaseRequestOptions} before performing the request.
          *
+         * \@security Regular XHR is the safest alternative to JSONP for most applications, and is
          * supported by all current browsers. Because JSONP creates a `<script>` element with
          * contents retrieved from a remote source, attacker-controlled data introduced by an untrusted
          * source could expose your application to XSS risks. Data exposed by JSONP may also be
@@ -1998,6 +2024,7 @@
     /**
      * The module that includes http's providers
      *
+     * \@experimental
      */
     var HttpModule = (function () {
         function HttpModule() {
@@ -2023,6 +2050,7 @@
     /**
      * The module that includes jsonp's providers
      *
+     * \@experimental
      */
     var JsonpModule = (function () {
         function JsonpModule() {

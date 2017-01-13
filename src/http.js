@@ -53,6 +53,7 @@ function mergeOptions(defaultOpts, providedOpts, method, url) {
  * ```typescript
  * import {Http, HTTP_PROVIDERS} from '\@angular/http';
  * import 'rxjs/add/operator/map'
+ * \@Component({
  *   selector: 'http-app',
  *   viewProviders: [HTTP_PROVIDERS],
  *   templateUrl: 'people.html'
@@ -98,6 +99,7 @@ function mergeOptions(defaultOpts, providedOpts, method, url) {
  * http.get('request-from-mock-backend.json').subscribe((res:Response) => doSomething(res));
  * ```
  *
+ * \@experimental
  */
 export class Http {
     /**
@@ -218,6 +220,9 @@ function Http_tsickle_Closure_declarations() {
     /** @type {?} */
     Http.prototype._defaultOptions;
 }
+/**
+ * \@experimental
+ */
 export class Jsonp extends Http {
     /**
      * @param {?} backend
@@ -232,6 +237,7 @@ export class Jsonp extends Http {
      * object can be provided as the 2nd argument. The options object will be merged with the values
      * of {\@link BaseRequestOptions} before performing the request.
      *
+     * \@security Regular XHR is the safest alternative to JSONP for most applications, and is
      * supported by all current browsers. Because JSONP creates a `<script>` element with
      * contents retrieved from a remote source, attacker-controlled data introduced by an untrusted
      * source could expose your application to XSS risks. Data exposed by JSONP may also be

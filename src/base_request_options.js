@@ -34,6 +34,7 @@ import { URLSearchParams } from './url_search_params';
  * console.log('options.url:', options.url); // https://google.com
  * ```
  *
+ * \@experimental
  */
 export class RequestOptions {
     /**
@@ -223,6 +224,7 @@ function RequestOptions_tsickle_Closure_declarations() {
  * console.log('req.url:', req.url); // https://google.com
  * ```
  *
+ * \@experimental
  */
 export class BaseRequestOptions extends RequestOptions {
     constructor() {

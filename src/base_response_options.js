@@ -34,6 +34,7 @@ import { Headers } from './headers';
  * console.log('res.json():', res.json()); // Object {name: "Jeff"}
  * ```
  *
+ * \@experimental
  */
 export class ResponseOptions {
     /**
@@ -102,9 +103,15 @@ function ResponseOptions_tsickle_Closure_declarations() {
      * @type {?}
      */
     ResponseOptions.prototype.headers;
-    /** @type {?} */
+    /**
+     * \@internal
+     * @type {?}
+     */
     ResponseOptions.prototype.statusText;
-    /** @type {?} */
+    /**
+     * \@internal
+     * @type {?}
+     */
     ResponseOptions.prototype.type;
     /** @type {?} */
     ResponseOptions.prototype.url;
@@ -153,6 +160,7 @@ function ResponseOptions_tsickle_Closure_declarations() {
  * console.log('res.text():', res.text()); // Angular;
  * ```
  *
+ * \@experimental
  */
 export class BaseResponseOptions extends ResponseOptions {
     constructor() {

@@ -24,6 +24,7 @@
  * console.log(thirdHeaders.get('X-My-Custom-Header')); //'Angular'
  * ```
  *
+ * \@experimental
  */
 export class Headers {
     /**
@@ -180,9 +181,15 @@ export class Headers {
     }
 }
 function Headers_tsickle_Closure_declarations() {
-    /** @type {?} */
+    /**
+     * \@internal header names are lower case
+     * @type {?}
+     */
     Headers.prototype._headers;
-    /** @type {?} */
+    /**
+     * \@internal map lower case names to actual names
+     * @type {?}
+     */
     Headers.prototype._normalizedNames;
 }
 //# sourceMappingURL=headers.js.map

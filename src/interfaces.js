@@ -11,6 +11,7 @@
  * The primary purpose of a `ConnectionBackend` is to create new connections to fulfill a given
  * {\@link Request}.
  *
+ * \@experimental
  * @abstract
  */
 export class ConnectionBackend {
@@ -24,6 +25,7 @@ export class ConnectionBackend {
 /**
  * Abstract class from which real connections are derived.
  *
+ * \@experimental
  * @abstract
  */
 export class Connection {
@@ -39,6 +41,7 @@ function Connection_tsickle_Closure_declarations() {
 /**
  * An XSRFStrategy configures XSRF protection (e.g. via headers) on an HTTP request.
  *
+ * \@experimental
  * @abstract
  */
 export class XSRFStrategy {
